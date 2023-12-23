@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulas matematicas</title>
+</head>
+<body>
+    <!--Escreva um programa que calcule e exiba a média aritmetica de três notas informadas pelo usuario-->
+
+    <!--Neste codigo usamos a função parseFloat() para converter as entradas do usuario em numeros de ponto flutuante.
+        Para exibir a mensagem no Beck foi utilizado consolo.log().
+        Para exibir a mensagem no Front html foi utilizado o document.body.innerHTML
+    -->
+
+    <script>
+        //Solicite ao usuuariuo as três notas
+
+        let nota1 = parseFloat(prompt("Digite a primeira nota: "));
+        let nota2 = parseFloat(prompt("Digite a segunda nota: "));
+        let nota3 - parseFloat(prompt("Digite a terceira nota: "));
+
+        //Calcula a média aritmetica
+        let media = (nota1 + nota2 + nota3) / 3;
+
+        //Exibe a média aritmetica
+        console.log("A media aritmetica das notas é", num1, "e", media);
+
+        // Exibe a média aritmética na página
+        document.body.innerHTML += `<p>A média aritmética dos números é: ${media}</p>`;
+    </script>    
+</body>
+</html>
