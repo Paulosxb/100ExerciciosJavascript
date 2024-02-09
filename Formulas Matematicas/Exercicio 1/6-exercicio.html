@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulas matematicas</title>
+</head>
+<body>
+    <!--Crie um programa que calcule e exiba o perimetro de um circulo, solicitando o raio ao usuario-->
+
+    <script>
+        //Solicite ao usuario o raio do circulo
+        let raio = parseFloat(prompt("Digite o raio do circulo: "));
+
+        //Calcula o perimetro do circulo
+        let perimetro = 2 * Math.PI * raio;
+
+        //Exibe o perimetro do circulo
+        console.log("O IMC é:", perimetro.toFixed(2));
+
+        // Exibe o perimetro do circulo na página
+        document.body.innerHTML += `<p>O perimetro do circulo é:  ${perimetro.toFixed(2)}</p>`;
+    </script>    
+</body>
+</html>
