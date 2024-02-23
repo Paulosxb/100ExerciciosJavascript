@@ -6,20 +6,23 @@
     <title>Formulas matematicas</title>
 </head>
 <body>
-    <!--Crie um programa que calcule e exiba o perimetro de um circulo, solicitando o raio ao usuario -->
+    <!--Escreva um programa que calcule a area de um circulo a partir do raio utilizando a formula A = rr2 -->
 
     <script>
-        //|Exibir
-        let raio = parseFloat(prompt("Digite o raio do circulo: "));
+        //Exibir o perimetro do circulo
+        console.log("O perimetr do circulo é:", perimetro.toFixed(2));
 
-        //Calcula o perimetro do circulo
-        let perimetro = 2 * Math.PI * raio;
+        //Solicita ao usuario o raio do circulo
+        let raio = parseFloat(prompt("Digite o raio do circulo:"));
 
-        //Exibe o perimetro do circulo
-        console.log("O IMC é:", perimetro.toFixed(2));
+        //Calcula a area do circulo
+        let area - Math.PI * Math.pow(raio, 2);
+
+        //Exibe a area do circulo
+        console.log("A area do circulo é:", area.toFixed(2));
 
         // Exibe o perimetro do circulo na página
-        document.body.innerHTML += `<p>O perimetro do circulo é:  ${perimetro.toFixed(2)}</p>`;
+        document.body.innerHTML += `<p>A area do circulo é:  ${area.toFixed(2)}</p>`;
     </script>    
 </body>
 </html>
