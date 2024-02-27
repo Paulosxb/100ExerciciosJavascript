@@ -6,23 +6,33 @@
     <title>Formulas matematicas</title>
 </head>
 <body>
-    <!--Escreva um programa que calcule a area de um circulo a partir do raio utilizando a formula A = rr2 -->
+    <!--Escreva um programa que calcule a equação de segundo grau (ax2 + bx + c = 0)-->
 
     <script>
-        //Exibir o perimetro do circulo
-        console.log("O perimetr do circulo é:", perimetro.toFixed(2));
+        //Calcula o discriminante
+        let discriminante = Math.pow(b, 2) - 4 * a * c;
 
-        //Solicita ao usuario o raio do circulo
-        let raio = parseFloat(prompt("Digite o raio do circulo:"));
+        //Verifica o valor do discriminante
+        if (discriminante > 0) {
+            //Calcula as raizes reais distintas
+            let raiz1 = (-b + Math.sqrt(discriminante)) / (2 * a);
+            let raiz2 = (-b - Math.sqrt(discriminante)) / (2 * a);
 
-        //Calcula a area do circulo
-        let area - Math.PI * Math.pow(raio, 2);
+            console.log("As raizes reais são: ", raiz1, "e", raiz2);
+        } else if (discriminante === 0) {
+            //Calcula a raiz real unica
+            let raiz = -b / (2 * a);
 
-        //Exibe a area do circulo
-        console.log("A area do circulo é:", area.toFixed(2));
+            console.log("A raiz real é: ", raiz);
+        }else{
+            console.log("A equação não possui raizes reais.");
+        }
 
-        // Exibe o perimetro do circulo na página
-        document.body.innerHTML += `<p>A area do circulo é:  ${area.toFixed(2)}</p>`;
+        //Exibe A equação não possui raizes reais
+        console.log("A equação não possui raizes reais:", raiz.toFixed(2));
+
+        // Exibe A equação não possui raizes reais
+        document.body.innerHTML += `<p>A equação não possui raizes reais:  ${raiz.toFixed(2)}</p>`;
     </script>    
 </body>
 </html>
