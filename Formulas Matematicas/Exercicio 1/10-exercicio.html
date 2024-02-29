@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulas matematicas</title>
+</head>
+<body>
+    <!--Escreva um programa que calcule o perimetro e a area de um retângulo, utilizando as formulas P = 2(1 + c) e A = 1c, onde 1 é a largura e c é o comprimento-->
+
+    <script>
+        //Solicite ao usuario a largura e o comprimento do retangulo
+        let largura = parseFloat(prompt("Digite a largura do retangulo:"));
+        let comprimento = parseFloat(prompt("Digite o comprimento do retagulo:"));
+
+        //Calcula o perimetro
+        let perimetro = 2 * (largura + comprimento);
+
+        //Calcula a area 
+        let  area = largura * comprimento;
+
+        //Exibe o perimetro e a area do retangulo
+        console.log("O perimetro do retangulo é:  " + perimetro);
+        console.log("A área do retangulo é de :   "+ area);
+
+        // Exibe A equação não possui raizes reais
+        document.body.innerHTML += `<p>O perimetro do retangulo é:  ${perimetro.toFixed(2)}</p>`;
+        document.body.innerHTML += `<p>A área do retangulo é de :   ${area.toFixed(2)}</p>`;
+
+    </script>    
+</body>
+</html>
