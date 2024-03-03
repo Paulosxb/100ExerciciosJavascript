@@ -4,7 +4,7 @@
 
 "Dominando JavaScript: 100 Exercícios Resolvidos e Comentados para Acelerar seu Aprendizado" é uma obra essencial para quem está iniciando no universo da programação e deseja aprimorar suas habilidades lógicas utilizando JavaScript. Com uma coleção de 100 exercícios abrangendo diversos aspectos da programação, este livro é projetado para acelerar o aprendizado através de práticas resolvidas e comentadas. Diferentes métodos de solução são explorados para proporcionar uma compreensão ampla de como abordar problemas de programação de várias maneiras.
 
-### Para Quem é Este Livro?
+### Para Quem é Este Livro ?
 
 Este guia é ideal para iniciantes em programação que precisam desenvolver suas habilidades de lógica de programação em JavaScript. Também é altamente recomendado para professores de disciplinas relacionadas a Algoritmos, Programação e Lógica de Programação, oferecendo um material rico para exemplos e atividades em sala de aula.
 
