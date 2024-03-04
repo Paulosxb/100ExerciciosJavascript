@@ -10,21 +10,23 @@
     onde a, b e c são os lados do triangulo e h é a altura relativa ao lado b-->
 
     <script>
-        //Solicite ao usuario os 
-        let largura = parseFloat(prompt("Digite a largura do retangulo:"));
-        let comprimento = parseFloat(prompt("Digite o comprimento do retagulo:"));
+        //Solicite ao usuario os valores dos lados do triangulo e a altura relativa ao lado b
+        let ladoA = parseFloat(prompt("Digite o valor do lado A:"));
+        let ladoB = parseFloat(prompt("Digite o valor do lado B:"));
+        let ladoC = parseFloat(prompt("Digite o valor do lado C:"));
+        let altura  = parseFloat(prompt("Digite o valor da altura triangulo (lado b): "));
 
         //Calcula o perimetro
-        let perimetro = 2 * (largura + comprimento);
+        let perimetro = ladoA + ladoB + ladoC;
 
         //Calcula a area 
-        let  area = largura * comprimento;
+        let  area = (ladoB + altura) / 2;
 
         //Exibe o perimetro e a area do retangulo
-        console.log("O perimetro do retangulo é:  " + perimetro);
-        console.log("A área do retangulo é de :   "+ area);
+        console.log("O perimetro do triangulo é:  " + perimetro);
+        console.log("A área do triangulo é de :   "+ area);
 
-        // Exibe A equação não possui raizes reais
+        //Exibe o perimetro e a area do retangulo
         document.body.innerHTML += `<p>O perimetro do retangulo é:  ${perimetro.toFixed(2)}</p>`;
         document.body.innerHTML += `<p>A área do retangulo é de :   ${area.toFixed(2)}</p>`;
 
